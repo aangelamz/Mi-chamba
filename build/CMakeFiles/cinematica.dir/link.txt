@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcinematica.a CMakeFiles/cinematica.dir/src/vector2d.cpp.o CMakeFiles/cinematica.dir/src/particula.cpp.o CMakeFiles/cinematica.dir/src/matematicas.cpp.o
+/usr/bin/ranlib libcinematica.a

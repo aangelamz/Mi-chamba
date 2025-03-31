@@ -1,0 +1,11 @@
+{
+    "cmake.configureOnOpen": true,
+    "cmake.debugConfig": {  
+        "args": ["0", "0", "20", "60", "9.8", "-90", "0", "4", "0.2"]
+    },
+    "files.associations": {
+        "string": "cpp",
+        "string_view": "cpp",
+        "iostream": "cpp"
+    }
+}

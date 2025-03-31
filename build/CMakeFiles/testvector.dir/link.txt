@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testvector.dir/src/testvector.cpp.o -o testvector  libcinematica.a 

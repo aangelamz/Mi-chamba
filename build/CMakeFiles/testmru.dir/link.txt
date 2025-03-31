@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testmru.dir/src/testmru.cpp.o -o testmru  libcinematica.a 
