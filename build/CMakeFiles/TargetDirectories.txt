@@ -1,7 +1,7 @@
-/home/angela/Mi-chamba-master/build/CMakeFiles/cinematica.dir
-/home/angela/Mi-chamba-master/build/CMakeFiles/testmua.dir
-/home/angela/Mi-chamba-master/build/CMakeFiles/testmru.dir
-/home/angela/Mi-chamba-master/build/CMakeFiles/testvector.dir
-/home/angela/Mi-chamba-master/build/CMakeFiles/testparticula.dir
-/home/angela/Mi-chamba-master/build/CMakeFiles/edit_cache.dir
-/home/angela/Mi-chamba-master/build/CMakeFiles/rebuild_cache.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/cinematica.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/testmua.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/testmru.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/testvector.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/testparticula.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/edit_cache.dir
+/home/angelamunozc/Descargas/practica2/build/CMakeFiles/rebuild_cache.dir

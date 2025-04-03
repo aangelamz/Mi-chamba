@@ -32,8 +32,12 @@ Vector2D::Vector2D(double modulo, double angulo, Uds uds) {
 }
 
 // Getters
-double Vector2D::x() const { return px; }
-double Vector2D::y() const { return py; }
+double Vector2D::x() const { 
+    return px; 
+}
+double Vector2D::y() const {
+    return py; 
+}
 
 double Vector2D::mod() const {
     return sqrt(px * px + py * py);
@@ -48,10 +52,14 @@ double Vector2D::ang(Uds uds) const {
 }
 
 // Setters
-void Vector2D::x(const double &x_nueva) { px = x_nueva; }
-void Vector2D::y(const double &y_nueva) { py = y_nueva; }
+void Vector2D::x(double x_nueva) { 
+    px = x_nueva; 
+}
+void Vector2D::y(double y_nueva) { 
+    py = y_nueva; 
+}
 
-void Vector2D::ang(const double &valor, Uds uds) {
+void Vector2D::ang(double valor, Uds uds) {
     double rdns;
     if (uds == Uds::Grados) {
         rdns = gradosARadianes(valor);
@@ -63,7 +71,7 @@ void Vector2D::ang(const double &valor, Uds uds) {
     py = modulo * sin(rdns);
 }
 
-void Vector2D::mod(const double &nuevoMod) {
+void Vector2D::mod(double nuevoMod) {
     double angMod = ang(Uds::Radianes);
     px = nuevoMod * cos(angMod);
     py = nuevoMod * sin(angMod);
@@ -82,7 +90,7 @@ void Vector2D::restar(const Vector2D &segundo) {
 }
 
 // Funcion que modifica el vector actual multiplicandole el segundo
-void Vector2D::multiplicar(const double &escalar) {
+void Vector2D::multiplicar(double escalar) {
     px *= escalar;
     py *= escalar;
 }
@@ -98,12 +106,12 @@ Vector2D restar(const Vector2D &v1, const Vector2D &v2) {
 }
 
 // Devuelve la multiplicacion de un vector por un escalar 
-Vector2D multiplicar(const Vector2D &v, const double &escalar) {
+Vector2D multiplicar(const Vector2D &v, double escalar) {
     return Vector2D(v.x() * escalar, v.y() * escalar);
 }
 
 // Devuelve la multiplicacion de un escalar por un vector 
-Vector2D multiplicar(const double &escalar, const Vector2D &v) {
+Vector2D multiplicar(double escalar, const Vector2D &v) {
     return Vector2D(v.x() * escalar, v.y() * escalar);
 }
 
@@ -112,7 +120,7 @@ double multiplicar(const Vector2D &v1, const Vector2D &v2) {
     return (v1.x() * v2.x() +  v1.y() * v2.y());
 }
 
-std::string Vector2D::to_string(const int &formato) const {
+std::string Vector2D::to_string(int formato) const {
     std::ostringstream oss;
     bool cart = (formato & FMTCARTESIANAS);
     bool polR = (formato & FMTPOLARESR);

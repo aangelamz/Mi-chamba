@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Practica2.dir/src/testmua.cpp.o -o Practica2  libcinematica.a 

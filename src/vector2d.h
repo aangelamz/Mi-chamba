@@ -47,16 +47,16 @@ public:
 
     // Setters
     // Asigna un nuevo valor a la componente x del vector
-    void x(const double &x_nueva);
+    void x(double x_nueva);
 
     // Asigna un nuevo valor a la componente y del vector
-    void y(const double &y_nueva);
+    void y(double y_nueva);
 
     // Define el ángulo del vector
-    void ang(const double &ang, Uds uds = Uds::Grados);
+    void ang(double ang, Uds uds = Uds::Grados);
 
     // Define el módulo del vector
-    void mod(const double &mod);
+    void mod(double mod);
 
     // Operaciones con vectores
     // Suma el vector actual con otro vector
@@ -66,22 +66,23 @@ public:
     void restar(const Vector2D &segundo);
 
     // Multiplica el vector actual por un escalar
-    void multiplicar(const double &escalar);
+    void multiplicar(double escalar);
 
     // Representa el vector en forma de cadena
-    std::string to_string(const int &formato = FMTCARTESIANAS | FMTPOLARESG) const;
+    std::string to_string(int formato = FMTCARTESIANAS | FMTPOLARESG) const;
 };
 
+// Suma dos vectores
 Vector2D sumar(const Vector2D &v1, const Vector2D &v2);
 
 // Resta dos vectores
 Vector2D restar(const Vector2D &v1, const Vector2D &v2);
 
 // Multiplica un vector por un escalar
-Vector2D multiplicar(const Vector2D &v, const double &escalar);
+Vector2D multiplicar(const Vector2D &v, double escalar);
 
 // Multiplica un escalar por un vector
-Vector2D multiplicar(const double &escalar, const Vector2D &v);
+Vector2D multiplicar(double escalar, const Vector2D &v);
 
 // Calcula el producto escalar de dos vectores
 double multiplicar(const Vector2D &v1, const Vector2D &v2);

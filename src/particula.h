@@ -6,7 +6,7 @@
 class Particula {
 private:
     
-    // Vector de posicion y vector de velocidad
+    // Vector de posicion, vector de velocidad y vector de aceleracion
     Vector2D p, v, a;
 
 public: 
@@ -15,8 +15,10 @@ public:
     Particula();
 
     // Constructor a partir de vectores p y v
-    Particula(Vector2D p, Vector2D v);
-    Particula(Vector2D p, Vector2D v, Vector2D a); // Nuevo constructor con aceleración
+    /*Particula(Vector2D p, Vector2D v);*/
+
+    // Constructor a partir de vectores p, v y a
+    Particula(Vector2D p, Vector2D v, Vector2D a); // Nuevo constructor con aceleracion
 
     // Getters
     // Obtiene el vector de posicion
@@ -25,42 +27,46 @@ public:
     // Obtiene el vector de velocidad
     Vector2D velocidad() const;
 
-    Vector2D aceleracion() const; // Nuevo getter para la aceleración
+    // Nuevo getter para la aceleracion
+    Vector2D aceleracion() const; 
 
     // Setters
     // Asigna un vector de posicion
-    void posicion( const Vector2D &pos);
+    void posicion(const Vector2D &pos);
 
     // Asigna un vector de posicion 
-    void posicion( double x, double y);
+    void posicion(double x, double y);
 
     // Asigna un vector de velocidad
-    void velocidad( const Vector2D &vel);
+    void velocidad(const Vector2D &vel);
 
     // Asigna un vector de velocidad
-    void velocidad( double m, double a);
+    void velocidad(double m, double a);
+    
+    // Nuevo setter para la aceleracion
+    void aceleracion(const Vector2D &ace); 
 
-    void aceleracion(const Vector2D &acc); // Nuevo setter para la aceleración
-    void aceleracion(double m, double ang); // Setter con módulo y ángulo
+    // Asigna un vector de aceleracion
+    void aceleracion(double m, double ang);
 
     // Asigna el modulo de la velocidad
     void vmod(double m);
 
     // Asigna el angulo de la velocidad
     void vang(double a);
+    
+    // Asigna el modulo de la aceleracion
+    void amod(double m); 
+    
+    // Asigna el angulo de la aceleracio
+    void aang(double ang); 
 
-    void amod(double m); // Nuevo método para modificar el módulo de la aceleración
-
-    void aang(double ang); // Nuevo método para modificar el ángulo de la aceleración
-
-    // Nuevo método de cinemática MRU:
+    // Avanzar en ambos movimientos
     void avanzaMRU(double dt);
-    void avanzaMUA(double dt); // Nuevo método para MUA
+    void avanzaMUA(double dt); 
 
     // Tostring
     std:: string to_string() const;
-
-    
 
 };
 

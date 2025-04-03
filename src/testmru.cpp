@@ -1,45 +1,47 @@
 #include <iostream>
 #include <iomanip>
-#include "particula.h"
 #include <cmath>
-
-constexpr double PI = 3.14159265358979323846;
+#include "particula.h"
+#include "matematicas.h"
 
 int main() {
     double posX, posY;
-    double mod, angDeg;
+    double mod, angGrad;
     double tInicial, tFinal, dt;
     
-    std::cout << "Dame los datos para la simulación:" << std::endl;
-    std::cout << " Posición inicial (x e y) : ";
+    std::cout << "Dame los datos para la simulacion, con espacios:" << std::endl;
+    std::cout << " Posicion inicial (x e y) : ";
     std::cin >> posX >> posY;
-    std::cout << " Velocidad (módulo y ángulo) : ";
-    std::cin >> mod >> angDeg;
+    std::cout << " Velocidad (modulo y angulo) : ";
+    std::cin >> mod >> angGrad;
     std::cout << " Tiempos (inicial, final, incremento) : ";
     std::cin >> tInicial >> tFinal >> dt;
     
-    // Convertir el ángulo de grados a radianes
-    double angRad = angDeg * PI / 180.0;
+    // Convertir el angulo de grados a radianes
+    double angRad = angGrad * PI_ENTRE_CIENTO_80;
     
     Particula p;
     p.posicion(posX, posY);
     p.velocidad(mod, angRad);
     
     std::cout << "Creada la particula : " << p.to_string() << std::endl;
-    std::cout << "Simulación MRU:" << std::endl;
+    std::cout << "Simulacion MRU:" << std::endl;
     std::cout << "t\tX\tY" << std::endl;
     
 
-    double currentTime = tInicial;
-    double step = currentTime;
-    // La primera iteración avanza la partícula en tInicial segundos y, a partir de ahí, de dt en dt.
-    while (currentTime <= tFinal) {
-         p.avanzaMRU(step);
-        std::cout << currentTime << " " 
-                  << p.posicion().x() << " " 
+    double tAhora = tInicial;
+    double tSiguiente = tAhora;
+    // La primera iteracion avanza la particula en tInicial segundos y, a partir de ahi, de dt en dt.
+    while (tAhora <= tFinal) {
+         p.avanzaMRU(tSiguiente);
+        // Salida por pantalla
+        std::cout << tAhora << "  " 
+                  << p.posicion().x() << "  " 
                   << p.posicion().y() << std::endl;
-        step = dt;
-        currentTime += step;
+        
+        tSiguiente = dt;
+        // Incrementar el tiempo 
+        tAhora += tSiguiente;
     }
     
     return 0;

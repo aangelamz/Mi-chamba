@@ -8,17 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/angela/Mi-chamba-master/src/matematicas.cpp" "CMakeFiles/cinematica.dir/src/matematicas.cpp.o" "gcc" "CMakeFiles/cinematica.dir/src/matematicas.cpp.o.d"
-  "/home/angela/Mi-chamba-master/src/particula.cpp" "CMakeFiles/cinematica.dir/src/particula.cpp.o" "gcc" "CMakeFiles/cinematica.dir/src/particula.cpp.o.d"
-  "/home/angela/Mi-chamba-master/src/vector2d.cpp" "CMakeFiles/cinematica.dir/src/vector2d.cpp.o" "gcc" "CMakeFiles/cinematica.dir/src/vector2d.cpp.o.d"
+  "/home/angelamunozc/Descargas/practica2/src/matematicas.cpp" "CMakeFiles/cinematica.dir/src/matematicas.cpp.o" "gcc" "CMakeFiles/cinematica.dir/src/matematicas.cpp.o.d"
+  "/home/angelamunozc/Descargas/practica2/src/particula.cpp" "CMakeFiles/cinematica.dir/src/particula.cpp.o" "gcc" "CMakeFiles/cinematica.dir/src/particula.cpp.o.d"
+  "/home/angelamunozc/Descargas/practica2/src/vector2d.cpp" "CMakeFiles/cinematica.dir/src/vector2d.cpp.o" "gcc" "CMakeFiles/cinematica.dir/src/vector2d.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
